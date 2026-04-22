@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="card auth-card">
+  <h1>Create account</h1>
+  <p class="muted">Start tracking with a clean workflow.</p>
+
+  <form method="post" class="form-grid">
+    <label>
+      Username
+      <input type="text" name="username" required />
+    </label>
+    <label>
+      Password
+      <input type="password" name="password" required />
+    </label>
+    <button class="btn" type="submit">Register</button>
+  </form>
+
+  <p class="muted small">Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+</section>
+{% endblock %}

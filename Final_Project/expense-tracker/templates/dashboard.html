@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="grid two">
+  <div class="card">
+    <h2>Add Expense</h2>
+    <form method="post" action="{{ url_for('add_expense') }}" class="form-grid">
+      <label>Date
+        <input type="text" name="date" placeholder="DD-MM-YYYY" required />
+      </label>
+      <label>Category
+        <input type="text" name="category" placeholder="Food, Travel, Bills" required />
+      </label>
+      <label>Amount
+        <input type="number" step="0.01" min="0.01" name="amount" required />
+      </label>
+      <label>Note
+        <input type="text" name="note" placeholder="Optional" />
+      </label>
+      <button class="btn" type="submit">Add</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Budget</h2>
+    <p class="muted">Current: {% if budget is not none %}₹{{ '%.2f'|format(budget) }}{% else %}Not set{% endif %}</p>
+    <form method="post" action="{{ url_for('set_budget') }}" class="inline-form">
+      <input type="number" step="0.01" min="0.01" name="budget" placeholder="Monthly budget" required />
+      <button class="btn secondary" type="submit">Update</button>
+    </form>
+
+    <h3>Monthly Report ({{ '%02d'|format(report.month) }}-{{ report.year }})</h3>
+    <p>Total: <strong>₹{{ '%.2f'|format(report.total) }}</strong></p>
+
+    {% if budget is not none %}
+      {% set remaining = budget - report.total %}
+      <p class="{% if remaining < 0 %}text-danger{% else %}text-success{% endif %}">
+        {% if remaining < 0 %}
+          Over budget by ₹{{ '%.2f'|format(-remaining) }}
+        {% else %}
+          Remaining ₹{{ '%.2f'|format(remaining) }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% if report.top_categories %}
+      <h4>Top Categories</h4>
+      <ul class="simple-list">
+        {% for cat, amt in report.top_categories %}
+          <li>{{ cat }} <span>₹{{ '%.2f'|format(amt) }}</span></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if report.highest_day %}
+      <p class="muted">Highest day: {{ report.highest_day.date }} (₹{{ '%.2f'|format(report.highest_day.amount) }})</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="card">
+  <div class="table-head">
+    <h2>Expenses</h2>
+    <div class="actions">
+      <form method="get" action="{{ url_for('dashboard') }}" class="inline-form">
+        <input type="text" name="category" value="{{ selected_category }}" placeholder="Filter category" />
+        <input type="text" name="month" value="{{ selected_month }}" placeholder="MM-YYYY" />
+        <button class="btn ghost" type="submit">Apply</button>
+      </form>
+      <a class="btn secondary" href="{{ url_for('export_csv') }}">Export CSV</a>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Date</th>
+          <th>Category</th>
+          <th>Amount</th>
+          <th>Note</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% if expenses %}
+        {% for e in expenses %}
+        <tr>
+          <td>{{ e.id[:8] }}...</td>
+          <td>{{ key_to_date(e.date_key).strftime('%d-%m-%Y') }}</td>
+          <td>{{ e.category }}</td>
+          <td>₹{{ '%.2f'|format(e.amount) }}</td>
+          <td>{{ e.note }}</td>
+          <td>
+            <form method="post" action="{{ url_for('delete_expense', expense_id=e.id) }}">
+              <button class="btn danger" type="submit">Delete</button>
+            </form>
+          </td>
+        </tr>
+        {% endfor %}
+      {% else %}
+        <tr>
+          <td colspan="6" class="muted center">No expenses found.</td>
+        </tr>
+      {% endif %}
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
