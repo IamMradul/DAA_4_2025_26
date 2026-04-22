@@ -1,0 +1,10 @@
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\CMAKEFILES\2450970401C07F24C199596D0F0077A5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Project/expense-tracker-cpp -BD:/Project/expense-tracker-cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Project/expense-tracker-cpp/build/expense_tracker_cpp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

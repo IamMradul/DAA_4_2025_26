@@ -1,0 +1,150 @@
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/tmp/nlohmann_json-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/tmp/nlohmann_json-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-UPDATE.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\nlohmann_json-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/tmp/nlohmann_json-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\nlohmann_json-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-BUILD.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\nlohmann_json-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-INSTALL.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\nlohmann_json-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\2E07BFCD22A4796C344E93009E8B00BC\NLOHMANN_JSON-POPULATE-TEST.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\nlohmann_json-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\DA905404F6E0AE8A809D4441045D1B0A\NLOHMANN_JSON-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/CMakeFiles/Debug/nlohmann_json-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/nlohmann_json-populate-prefix/src/nlohmann_json-populate-stamp/Debug/nlohmann_json-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKEFILES\485BC20A8F67FE088577043D1D97A341\NLOHMANN_JSON-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\NLOHMANN_JSON-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild -BD:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild --check-stamp-file D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

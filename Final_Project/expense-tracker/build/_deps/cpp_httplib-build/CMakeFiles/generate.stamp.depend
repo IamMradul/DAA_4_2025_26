@@ -1,0 +1,27 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.2/Modules/BasicConfigVersion-SameMinorVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake
+C:/Program Files/CMake/share/cmake-4.2/Templates/CPackConfig.cmake.in
+C:/msys64/mingw64/lib/cmake/zstd/zstdConfig.cmake
+C:/msys64/mingw64/lib/cmake/zstd/zstdConfigVersion.cmake
+C:/msys64/mingw64/lib/cmake/zstd/zstdTargets-release.cmake
+C:/msys64/mingw64/lib/cmake/zstd/zstdTargets.cmake
+D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-src/CMakeLists.txt
+D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-src/cmake/FindBrotli.cmake
+D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-src/cmake/httplibConfig.cmake.in

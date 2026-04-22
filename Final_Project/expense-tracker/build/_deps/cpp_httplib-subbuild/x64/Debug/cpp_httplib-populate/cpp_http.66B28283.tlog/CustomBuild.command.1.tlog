@@ -1,0 +1,150 @@
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/tmp/cpp_httplib-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/tmp/cpp_httplib-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-UPDATE.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\cpp_httplib-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/tmp/cpp_httplib-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\cpp_httplib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-BUILD.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\cpp_httplib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-INSTALL.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\cpp_httplib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\C0BF94925D3261D67F8D998D7112C7DA\CPP_HTTPLIB-POPULATE-TEST.RULE
+setlocal
+cd D:\Project\expense-tracker-cpp\build\_deps\cpp_httplib-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\019113A870330ADDB08631649AD56956\CPP_HTTPLIB-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/Debug/cpp_httplib-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate-prefix/src/cpp_httplib-populate-stamp/Debug/cpp_httplib-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\FEBD966A7281DE329E4132373B5D1F49\CPP_HTTPLIB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild -BD:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild --check-stamp-file D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

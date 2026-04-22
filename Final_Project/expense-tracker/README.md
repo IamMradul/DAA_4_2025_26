@@ -1,146 +1,57 @@
-# Expense Tracker Web App
+# Expense Tracker (C++ Only)
 
-A clean, browser-based expense tracker built with Flask.
-
-This project includes:
-- A web interface for managing expenses
-- User authentication (register/login)
-- Monthly reporting with top categories
-- Budget tracking
-- CSV export
-- Existing CLI version (still available)
+A C++ web app equivalent of the attached Python Expense Tracker project.
 
 ## Features
 
-- Register and login with username/password
-- Add expenses with date, category, amount, and note
-- Delete expenses
-- Set and update monthly budget
-- View monthly summary:
+- User registration and login
+- Add and delete expenses
+- Monthly budget update
+- Monthly report:
   - total spend
-  - over-budget or remaining amount
+  - remaining / over budget
   - top 3 categories
   - highest spending day
-- Filter expense list by category and month
-- Export all expenses to CSV
+- Filter expenses by category and month
+- Export expenses to CSV
+- JSON file persistence under `data/`
 
-## Tech Stack
+## Tech
 
-- Python 3
-- Flask
-- Jinja2 templates
-- CSS (custom, responsive UI)
+- C++17
+- cpp-httplib (HTTP server)
+- nlohmann/json (JSON persistence)
+- CMake
 
-## Project Structure
+## Folder Layout
 
-- `web_app.py` : Flask web server and routes
-- `templates/` : HTML templates
-- `static/styles.css` : UI styles
-- `main.py` : CLI app and shared `Session` logic
-- `models.py` : Expense model and AVL tree
-- `storage.py` : file-based persistence
-- `auth.py` : registration and login helpers
-- `utils.py` : date/id/hash utilities
-- `data/` : user and expense data files
+- `src/` C++ source files
+- `static/styles.css` UI styles
+- `data/users.json` credential registry
+- `data/<username>.json` per-user budget and expenses
 
-## Setup
+## Build
 
-### 1. Open project folder
+From `d:/Project/expense-tracker-cpp`:
 
 ```powershell
-cd d:\Project\expense-tracker
+cmake -S . -B build
+cmake --build build --config Release
 ```
 
-### 2. Create virtual environment (recommended)
+## Run
 
 ```powershell
-python -m venv .venv
+./build/Release/expense_tracker_cpp.exe
 ```
 
-### 3. Activate environment
+If your generator is Ninja/Makefiles, executable may be in `build/expense_tracker_cpp.exe`.
 
-PowerShell:
+Open:
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+- http://127.0.0.1:8080
 
-Git Bash / MSYS (if you use it):
+## Notes
 
-```bash
-source .venv/bin/activate
-```
-
-### 4. Install dependencies
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-## Run the Website
-
-```powershell
-python web_app.py
-```
-
-Then open:
-
-```text
-http://127.0.0.1:5000
-```
-
-## How to Use
-
-1. Register a new account.
-2. Login.
-3. Add expenses from the dashboard form.
-4. Set your monthly budget.
-5. Use filters for category/month when needed.
-6. Export CSV from the dashboard.
-
-## Data Storage
-
-Data is stored locally under `data/`:
-- `users.json` stores user credentials (hashed password)
-- `<username>.json` stores budget and expense list
-
-No external database is required.
-
-## Security Notes
-
-- This is a local development app.
-- Update `SECRET_KEY` in `web_app.py` before any production use.
-- Use HTTPS and a production WSGI server if deploying publicly.
-
-## Run the CLI Version (Optional)
-
-```powershell
-python main.py
-```
-
-## Troubleshooting
-
-### `ModuleNotFoundError: No module named 'flask'`
-
-Install dependencies:
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
-### Port 5000 already in use
-
-Run on another port:
-
-```powershell
-python -c "from web_app import app; app.run(debug=True, port=5001)"
-```
-
-Then open `http://127.0.0.1:5001`.
-
-## Future Improvements
-
-- Edit expense entries
-- Category analytics charts
-- Stronger auth/session hardening
-- Production deployment config
+- Run from the project root so relative `data/` and `static/` paths resolve correctly.
+- Password hashing in this demo uses a deterministic app-level hash function (for local development only).

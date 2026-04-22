@@ -1,0 +1,10 @@
+^D:\PROJECT\EXPENSE-TRACKER-CPP\BUILD\_DEPS\CPP_HTTPLIB-SUBBUILD\CMAKEFILES\FEBD966A7281DE329E4132373B5D1F49\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild -BD:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cpp_httplib-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

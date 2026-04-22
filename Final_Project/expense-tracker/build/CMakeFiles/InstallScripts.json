@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Project/expense-tracker-cpp/build/cmake_install.cmake",
+		"D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-build/cmake_install.cmake",
+		"D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

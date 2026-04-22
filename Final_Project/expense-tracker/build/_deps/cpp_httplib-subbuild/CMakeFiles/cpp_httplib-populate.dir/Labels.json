@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/cpp_httplib-populate"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/febd966a7281de329e4132373b5d1f49/cpp_httplib-populate.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/019113a870330addb08631649ad56956/cpp_httplib-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-build.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-download.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-install.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-test.rule"
+		},
+		{
+			"file" : "D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-subbuild/CMakeFiles/c0bf94925d3261d67f8d998d7112c7da/cpp_httplib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpp_httplib-populate"
+		],
+		"name" : "cpp_httplib-populate"
+	}
+}

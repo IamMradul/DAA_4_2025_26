@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Project\expense-tracker-cpp\build\CMakeFiles\2450970401c07f24c199596d0f0077a5\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4B640BE0-C3C3-3270-B1BE-EF6318CE7F0A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

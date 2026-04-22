@@ -1,0 +1,11 @@
+D:/Project/expense-tracker-cpp/build/CMakeFiles/expense_tracker_cpp.dir
+D:/Project/expense-tracker-cpp/build/CMakeFiles/PACKAGE.dir
+D:/Project/expense-tracker-cpp/build/CMakeFiles/INSTALL.dir
+D:/Project/expense-tracker-cpp/build/CMakeFiles/ALL_BUILD.dir
+D:/Project/expense-tracker-cpp/build/CMakeFiles/ZERO_CHECK.dir
+D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-build/CMakeFiles/PACKAGE.dir
+D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-build/CMakeFiles/INSTALL.dir
+D:/Project/expense-tracker-cpp/build/_deps/cpp_httplib-build/CMakeFiles/ALL_BUILD.dir
+D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-build/CMakeFiles/PACKAGE.dir
+D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-build/CMakeFiles/INSTALL.dir
+D:/Project/expense-tracker-cpp/build/_deps/nlohmann_json-build/CMakeFiles/ALL_BUILD.dir
